@@ -1,10 +1,12 @@
 export const CHANGELOG = [
     {
+1.1.19-spinoff
         version: "1.1.19",
         date: "02.07.2020",
         entries: [
             "There are now notifications every 15 minutes in the demo version to buy the full version (For further details and the reason, check the #surveys channel in the discord)",
             "I'm still working on the wires update, I hope to release it mid august!",
+
         ],
     },
     {
@@ -130,7 +132,7 @@ export const CHANGELOG = [
         version: "1.1.10",
         date: "12.06.2020",
         entries: [
-            "There are now linux builds on steam! Please report any issues in the discord!",
+            "There are now linux builds on steam! Please report any issues in the Discord!",
             "Steam cloud saves are now available!",
             "Added and update more translations (Big thank you to all translators!)",
             "Prevent invalid connection if existing underground tunnel entrance exists (by jaysc)",
@@ -200,7 +202,7 @@ export const CHANGELOG = [
         entries: [
             "The official trailer is now ready! Check it out <a href='https://www.youtube.com/watch?v=KyorY1uIqiQ' target='_blank'>here</a>!",
             "The <a href='https://steam.shapez.io' target='_blank'>steam page</a> is now live!",
-            "Experimental linux builds are now available! Please give me feedback on them in the discord",
+            "Experimental linux builds are now available! Please give me feedback on them in the Discord",
             "Allow hovering pinned shapes to enlarge them",
             "Allow deselecting blueprints with right click and 'Q'",
             "Move default key for deleting from 'X' to 'DEL'",
