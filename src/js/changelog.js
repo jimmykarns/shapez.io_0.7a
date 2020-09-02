@@ -1,34 +1,12 @@
 export const CHANGELOG = [
     {
-        version: "1.2.0",
-        date: "unreleased",
-        entries: [
-            "WIRES",
-            "Reworked menu UI design (by dengr1605)",
-            "Allow holding ALT in belt planner to reverse direction (by jakobhellermann)",
-            "Clear cursor when trying to pipette the same building twice (by hexy)",
-            "Fixed level 18 stacker bug: If you experienced it already, you know it, if not, I don't want to spoiler (by hexy)",
-            "Added keybinding to close menus (by isaisstillalive / Sandwichs-del)",
-            "Fix rare crash regarding the buildings toolbar (by isaisstillalive)",
-            "Fixed some phrases (by EnderDoom77)",
-            "Zoom towards mouse cursor (by Dimava)",
-            "Added multiple settings to optimize the performance",
-            "Updated the soundtrack again, it is now 40 minutes in total!",
-            "Updated and added new translations (Thanks to all contributors!)",
-            "Allow editing waypoints (by isaisstillalive)",
-            "Show confirmation when cutting area which is too expensive to get pasted again (by isaisstillalive)",
-            "Show mouse and camera tile on debug overlay (F4) (by dengr)",
-            "Fix tunnels entrances connecting to exits sometimes when they shouldn't",
-            "The initial belt planner direction is now based on the cursor movement (by MizardX)",
-            "Fix preferred variant not getting saved when clicking on the hud (by Danacus)",
-        ],
-    },
-    {
+1.1.19-spinoff
         version: "1.1.19",
         date: "02.07.2020",
         entries: [
-            "There are now notifications every 15 minutes in the demo version to buy the full version (For further details and the reason, check the #surveys channel in the Discord)",
-            "I'm still working on the wires update, I hope to release it mid july!",
+            "There are now notifications every 15 minutes in the demo version to buy the full version (For further details and the reason, check the #surveys channel in the discord)",
+            "I'm still working on the wires update, I hope to release it mid august!",
+
         ],
     },
     {

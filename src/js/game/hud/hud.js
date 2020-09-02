@@ -15,7 +15,7 @@ import { HUDKeybindingOverlay } from "./parts/keybinding_overlay";
 import { HUDUnlockNotification } from "./parts/unlock_notification";
 import { HUDGameMenu } from "./parts/game_menu";
 import { HUDShop } from "./parts/shop";
-import { IS_MOBILE, globalConfig, IS_DEMO } from "../../core/config";
+import { IS_MOBILE, globalConfig, IS_DEMO, IS_MAC } from "../../core/config";
 import { HUDMassSelector } from "./parts/mass_selector";
 import { HUDVignetteOverlay } from "./parts/vignette_overlay";
 import { HUDStatistics } from "./parts/statistics";
@@ -37,12 +37,9 @@ import { HUDColorBlindHelper } from "./parts/color_blind_helper";
 import { HUDShapeViewer } from "./parts/shape_viewer";
 import { HUDWiresOverlay } from "./parts/wires_overlay";
 import { HUDChangesDebugger } from "./parts/debug_changes";
-import { queryParamOptions } from "../../core/query_parameters";
-import { HUDSandboxController } from "./parts/sandbox_controller";
-import { HUDWiresToolbar } from "./parts/wires_toolbar";
-import { HUDWireInfo } from "./parts/wire_info";
-import { HUDLeverToggle } from "./parts/lever_toggle";
-import { HUDLayerPreview } from "./parts/layer_preview";
+ 1.1.19-spinoff
+import { HUDStandaloneReminder } from "./parts/standalone_reminder";
+
 
 export class GameHUD {
     /**
@@ -111,6 +108,10 @@ export class GameHUD {
 
         if (IS_DEMO) {
             this.parts.watermark = new HUDWatermark(this.root);
+        }
+
+        if (IS_DEMO && !IS_MAC) {
+            this.parts.standaloneReminder = new HUDStandaloneReminder(this.root);
         }
 
         if (G_IS_DEV && globalConfig.debug.renderChanges) {
